@@ -1,4 +1,16 @@
 :focus-visible {
-  outline: 3px solid #1899d6 !important;
+  outline: 3px solid rgb(63, 34, 236) !important;
 }
 
+button[data-test^="skill-path"]:focus-visible {
+  border-radius: 100%;
+}
+
+.keypress-indicator {
+  position: fixed;
+  z-index: 1;
+  padding: 10px;
+  border: solid rgb(229, 229, 229);
+  border-width: 2px 2px 4px;
+  background: white;
+}

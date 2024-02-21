@@ -9,5 +9,11 @@
   "background": {
     "service_worker": "background.js"
   },
+  "content_scripts": [
+    {
+      "matches": ["*://*.duolingo.com/*"],
+      "js": ["content.js"]
+    }
+  ],
   "host_permissions": ["*://*.duolingo.com/*"]
 }
