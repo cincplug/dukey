@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Dukey",
-  "description": "Browser extension for Duolingo keyboard navigation",
+  "description": "Makes Duolingo more accessible and intuitive for keyboard-focused users.",
   "version": "1.0",
   "permissions": ["activeTab", "scripting"],
   "action": {
