@@ -11,6 +11,13 @@ if (!window.contentScriptLoaded) {
             element.removeAttribute("role");
             element.removeAttribute("tabindex");
           });
+
+        const newLevelElement = document.querySelector(
+          'a[data-test*="skill-path-state-active"]'
+        );
+        if (newLevelElement) {
+          newLevelElement.focus();
+        }
       }
     });
   });
@@ -35,7 +42,7 @@ if (!window.contentScriptLoaded) {
       event.preventDefault();
       if (
         event.key === " " &&
-        !event.target.matches('button[data-test*="skill-path-level-skill"]')
+        !event.target.matches('[data-test*="skill-path"]')
       ) {
         event.target.click();
       }
