@@ -1,6 +1,7 @@
 {
   "manifest_version": 3,
-  "name": "Duolingo Focus",
+  "name": "Dukey",
+  "description": "Browser extension for Duolingo keyboard navigation",
   "version": "1.0",
   "permissions": ["activeTab", "scripting"],
   "action": {
