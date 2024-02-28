@@ -7,15 +7,14 @@
   box-shadow: 0 1px 0 2px rgba(63, 34, 236, 0.9) !important;
   background: none;
 }
-
-button[data-test^="skill-path"]:focus-visible {
+[data-test^="skill-path"]:focus-visible {
   border-radius: 100%;
 }
 
-button[data-test^="legendary-start-button"]:focus-visible,
-button[data-test^="legendary-session-end-continue"]:focus-visible,
-button[data-test^="plus-continue"]:focus-visible,
-button[data-test^="plus-no-thanks"]:focus-visible,
+[data-test="legendary-start-button"]:focus-visible,
+[data-test^="legendary-session-end-continue"]:focus-visible,
+[data-test^="plus-continue"]:focus-visible,
+[data-test^="plus-no-thanks"]:focus-visible,
 ._1RlJg button:focus-visible {
   box-shadow: 0 1px 0 3px rgba(38, 246, 99, 0.9) !important;
 }
