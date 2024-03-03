@@ -10,6 +10,9 @@
 [data-test^="skill-path"]:focus-visible {
   border-radius: 100%;
 }
+[data-test^="skill-path-state-active"]:focus-visible {
+  border-radius: 15px;
+}
 
 [data-test="legendary-start-button"]:focus-visible,
 [data-test^="legendary-session-end-continue"]:focus-visible,
@@ -22,12 +25,13 @@
 ._16XFG:after {
   position: absolute;
   display: block;
+  width: auto !important;
   content: "";
-  top: -8px;
-  left: -8px;
-  right: -8px;
-  bottom: -8px;
-  border-radius: 9px;
+  top: -1% !important;
+  left: -1% !important;
+  right: -1% !important;
+  bottom: -1% !important;
+  border-radius: 5px;
   border: 1px dashed;
 }
 
