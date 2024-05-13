@@ -16,5 +16,11 @@
       "js": ["content.js"]
     }
   ],
-  "host_permissions": ["*://*.duolingo.com/*"]
+  "host_permissions": ["*://*.duolingo.com/*"],
+  "icons": {
+    "16": "dukey16.png",
+    "32": "dukey32.png",
+    "48": "dukey48.png",
+    "128": "dukey128.png"
+  }
 }
