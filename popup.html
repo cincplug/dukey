@@ -1,6 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
   <body>
-    <h1>Dukey - Duolingo keyboard focus helper</h1>
+    <section style="width: 375px">
+      <h2>Dukey - Duolingo keyboard focus helper</h2>
+      <p>
+        This extension makes Duolingo more usable with keyboard, by injecting
+        CSS styles that make keyboard focus on buttons and options clearly
+        visible when you use Tab key to go forward and Shift + Tab to go
+        backward through interactive elements.
+      </p>
+      <p>
+        It should activate the functionality whenever you reload the Duolingo
+        tab or switch to it from another tab. But in case it doesn't load
+        automatically, you can click the button below.
+      </p>
+      <button id="dukey-button">
+        <img src="dukey48.png" alt="Dukey" />
+        <br />Dukey
+      </button>
+      <p>
+        You'll recognize that it's on when you see a bluish border around
+        buttons when you browse through them with Tab (forward) or Shift Tab
+        (backward)
+      </p>
+      <h2>Rationale</h2>
+      <p>
+        Making users able to navigate any website using Tab key is an
+        accessibility requirement that everyone should take seriously. In most
+        cases, all it takes to meet this requirement is NOT to interfere with
+        keyboard navigation or hide tab focus styles. But many websites
+        deliberately do it, because keyboard focus styles don't look fancy
+        enough.
+      </p>
+      <p>
+        Unfortunately, Duolingo is one of such websites (at the the moment of
+        publishing this extension 14.5.2024). If you try tabbing through buttons
+        and options in any lesson, you simply won't see where your focus is. You
+        can press Enter to submit the question, and if you start typing some of
+        offered words from Word bank, you will have initial letters colored in
+        blue, which is a nice feature, but you can't see where you go with the
+        Tab key, which is a STANDARD, primarily because of people with motoric
+        impairments, and additionally there are many of us who simply prefer
+        keyboard over mouse or track pad.
+      </p>
+      <p>
+        So, not complying to this standard is a big pity, especially for the
+        website which claims to strive for social values like Duolingo, and it's
+        especially a pity since they do this social mission quite well when it
+        comes to promoting gender and racial equality and inclusion. So, just
+        spread that to accessibility and we're good.
+      </p>
+      <p>
+        Therefore, I sincerely hope that Duolingo will take steps to fix their
+        keyboard navigation out of the box, even if that will make my efforts in
+        making this extension obsolete. I initially made it just for personal
+        use anyway, and then I thought I'd rather make it visible and help both
+        myself and others.
+      </p>
+      <p>
+        Be careful when using the extension and especially keep your hand away
+        from Enter key, because you'll submit the wrong answer and lose hearts
+        ❤️❤️❤️ just when you need them 😱
+      </p>
+      <p>So there I warned you!</p>
+      <p>
+        And in general, it doesn't work perfectly in all cases, plus there's a
+        chance that Duolingo might change CSS selectors in scope of some future
+        redesign, and then some functionality of Dukey might just stop working.
+        But I hope they'll make it easier for everyone and enable keyboard
+        navigation themselves.
+      </p>
+      <p>Cheers everyone and long live all the languages!</p>
+      <p>🍎🍅🍓🍒🌶🍉🍠🍑🥕🍊🧅🥔🥥🍍🌽🍋🍌🥑🍐🍈🥝🥦🥒🫑🍏🥬🫐🍆🍇</p>
+    </section>
+    <script src="popup.js"></script>
   </body>
 </html>
