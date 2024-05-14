@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Dukey",
-  "description": "Makes Duolingo more accessible and intuitive for keyboard-focused users.",
+  "description": "Makes Duolingo more accessible and intuitive for keyboard users, by adding keyboard focus styles.",
   "version": "1.0",
   "permissions": ["activeTab", "scripting"],
   "action": {
