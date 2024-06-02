@@ -1,6 +1,8 @@
 if (!window.contentScriptLoaded) {
   window.contentScriptLoaded = true;
 
+  let focusedButton = null;
+
   const observer = new MutationObserver((mutationsList) => {
     mutationsList.forEach((mutation) => {
       if (mutation.type === "childList") {
@@ -17,6 +19,22 @@ if (!window.contentScriptLoaded) {
         );
         if (newLevelElement) {
           newLevelElement.focus();
+        }
+
+        const alliterateElement = document.querySelector("._1XKa3");
+        if (alliterateElement) {
+          const parentButton = alliterateElement.closest("button");
+          console.log(parentButton);
+          const wordBankAncestor = alliterateElement.closest(
+            '[data-test="word-bank"]'
+          );
+          if (wordBankAncestor) {
+            parentButton.focus();
+            focusedButton = parentButton;
+          } else if(document.activeElement) {
+            document.activeElement.blur();
+            focusedButton = null;
+          }
         }
       }
     });
