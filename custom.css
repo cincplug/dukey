@@ -18,6 +18,7 @@
 [data-test^="legendary-session-end-continue"]:focus-visible,
 [data-test^="plus-continue"]:focus-visible,
 [data-test^="plus-no-thanks"]:focus-visible,
+[data-test^="plus-close-x"]:focus-visible,
 ._1RlJg button:focus-visible {
   box-shadow: 0 1px 0 3px rgba(38, 246, 99, 0.9) !important;
 }
