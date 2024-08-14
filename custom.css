@@ -1,10 +1,23 @@
+:root {
+  --color-dukey: rgba(63, 34, 236, 0.9);
+  --shadow-dukey: 0 1px 0 3px var(--color-dukey);
+}
+
+@keyframes dukey {
+  from {
+    color: var(--color-dukey);
+  }
+  to {
+    color: inherit;
+  }
+}
+
 :focus-visible {
-  box-shadow: 0 1px 0 3px rgba(63, 34, 236, 0.9) !important;
+  box-shadow: var(--shadow-dukey) !important;
 }
 
 [data-test="hint-token"]:focus-visible {
   border-radius: 4px;
-  box-shadow: 0 1px 0 2px rgba(63, 34, 236, 0.9) !important;
   background: none;
 }
 [data-test^="skill-path"]:focus-visible {
@@ -12,15 +25,6 @@
 }
 [data-test^="skill-path-state-active"]:focus-visible {
   border-radius: 15px;
-}
-
-[data-test="legendary-start-button"]:focus-visible,
-[data-test^="legendary-session-end-continue"]:focus-visible,
-[data-test^="plus-continue"]:focus-visible,
-[data-test^="plus-no-thanks"]:focus-visible,
-[data-test^="plus-close-x"]:focus-visible,
-._1RlJg button:focus-visible {
-  box-shadow: 0 1px 0 3px rgba(38, 246, 99, 0.9) !important;
 }
 
 ._16XFG:after {
@@ -36,15 +40,12 @@
   border: 1px dashed;
 }
 
-.keypress-indicator {
-  position: fixed;
-  z-index: 1;
-  padding: 10px;
-  border: solid rgb(229, 229, 229);
-  border-width: 2px 2px 4px;
-  background: white;
+._27oGP {
+  font-weight: bold;
+  font-synthesis: none;
 }
 
-/* [data-test="hint-token"] {
-  background: white !important;
-} */
+._2_f9k {
+  animation-name: dukey !important;
+}
+
