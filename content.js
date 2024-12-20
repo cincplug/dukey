@@ -31,7 +31,7 @@ if (!window.contentScriptLoaded) {
           if (wordBankAncestor) {
             parentButton.focus();
             focusedButton = parentButton;
-          } else if(document.activeElement) {
+          } else if (document.activeElement) {
             document.activeElement.blur();
             focusedButton = null;
           }
@@ -63,6 +63,12 @@ if (!window.contentScriptLoaded) {
         !event.target.matches('[data-test*="skill-path"]')
       ) {
         event.target.click();
+      }
+      const noThanksElement = document.querySelector(
+        '._1Udkq, [data-test="plus-no-thanks"], [data-test="practice-hub-ad-no-thanks-button"], [data-test="quit-button"], [data-test="legendary-session-end-continue"]'
+      );
+      if (noThanksElement && event.key === "Escape") {
+        noThanksElement.click();
       }
     });
     window.keydownListenerAdded = true;
